@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="ressources/js/jquery.js"></script>
+		<script type="text/javascript" src="ressources/js/jquery.innerfade.js"></script>
+		<script type="text/javascript">
+			function autoupdate() {
+				var duration = 31; // Durée d'apparition: Number of images*4 - 1 (4 corresponds to the second timeout of the innerfade)
+				var timeout = 300; // Time between each appearance (5min = 300s)
+					
+				$('#slideshow').innerfade({
+					timeout: 1000,
+					speed: 1000,
+					timeout: 4000,
+					type: 'sequence',
+					containerheight: '109px'
+				}).animate({"right": "-=320px"}, 1000);
+					
+				setTimeout(function() {
+					$('#slideshow').animate({"left": "-=320px"}, 1000);
+				}, duration*1000)
+					
+				setTimeout(function () {
+						$('#slideshow').animate({"right": "+=320px"}, 1000);
+						location.reload();
+				}, timeout*1000 + duration*1000);
+			}
+
+			$(function(){
+				autoupdate();
+			});
+		</script>
+		<style>
+			body {
+				background-color: rgba(0, 0, 0, 0);
+				margin: 0px auto;
+				overflow: hidden;
+			}
+			
+			li {
+				position: absolute;
+				bottom: 12px;
+				left: -320px;
+				list-style-type: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="slideshow">
+			<!--<li><img src="ressources/images/panels/Subscribe.png" alt="Subscribe"></li>-->
+			<li><img src="ressources/images/panels/Website.png" alt="Website"></li>
+			<li><img src="ressources/images/panels/Donate.png" alt="Donate"></li>
+			<li><img src="ressources/images/panels/YouTube.png" alt="Youtube"></li>
+			<li><img src="ressources/images/panels/Twitter.png" alt="Twitter"></li>
+			<li><img src="ressources/images/panels/Discord.png" alt="Discord"></li>
+			<li><img src="ressources/images/panels/Tipeee.png" alt="Tipeee"></li>
+			<li><img src="ressources/images/panels/Facebook.png" alt="Facebook"></li>
+			<li><img src="ressources/images/panels/Instagram.png" alt="Instagram"></li>
+		</ul>
+	</body>
+</html>

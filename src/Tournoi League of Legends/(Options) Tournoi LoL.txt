@@ -1,0 +1,37 @@
+Overlay:
+--------
+Blue color: #2E55C5
+Red color: #AF3629
+Font: Shentox-SemiBold
+
+Taille de l'interface:
+----------------------
+Échelle de l'ATH: 86
+Échelle de la fenêtre de disussion: 0
+Échelle de la minicarte: 100
+
+Contrôles:
+----------
+	Interface:
+	----------
+	Brouillard de guerre ON/OFF: T
+	ATH Spectateur ON/OFF: Y
+	Afficher scores/objets: U
+	Afficher/Masquer l'interface de combat: I
+	Afficher les scores: O
+	Afficher/masquer l'ATH: P
+
+	Contrôle de la caméra
+	---------------------
+	Caméra dirigée: A
+	Sélectionner joueurs bleus: 1->5
+	Sélecttionner joueurs rouges: Q->F
+	Centrer caméra sur champion: Space
+
+	Contrôle du temps:
+	------------------
+	Play/pause: M
+
+	Autres:
+	-------
+	Afficher/Masquer FPS/Ping: CTRL+F

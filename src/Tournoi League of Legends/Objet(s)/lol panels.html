@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="ressources/js/jquery.js"></script>
+		<script type="text/javascript" src="ressources/js/jquery.innerfade.js"></script>
+		<script type="text/javascript">
+			function autoupdate() {
+				$('#slideshow').innerfade({
+					timeout: 1000,
+					speed: 1000,
+					timeout: 60000, // 60000
+					type: 'sequence',
+					containerheight: '118px'
+				});
+			}
+
+			$(function(){
+				autoupdate();
+			});
+		</script>
+		<style>
+			body {
+				background-image: url("ressources/images/lol_panels/background.png");
+				background-repeat: no-repeat;
+				background-color: rgba(0, 0, 0, 0);
+				margin: 0px auto;
+				overflow: hidden;
+			}
+			
+			li {
+				position: relative;
+				bottom: 12px;
+				left: -8px;
+				list-style-type: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="slideshow">
+			<li><img src="ressources/images/lol_panels/riot _games.png" alt="riot_games"></li>
+			<li><img src="ressources/images/lol_panels/tournois_legend.png" alt="tournois_legend"></li>
+			<li><img src="ressources/images/lol_panels/current_patch.png" alt="current_patch"></li>
+		</ul>
+	</body>
+</html>
