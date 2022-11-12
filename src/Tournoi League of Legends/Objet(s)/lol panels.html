@@ -8,7 +8,7 @@
 				$('#slideshow').innerfade({
 					timeout: 1000,
 					speed: 1000,
-					timeout: 60000, // 60000
+					timeout: 5000, // 60000
 					type: 'sequence',
 					containerheight: '118px'
 				});
@@ -23,22 +23,21 @@
 				background-image: url("ressources/images/lol_panels/background.png");
 				background-repeat: no-repeat;
 				background-color: rgba(0, 0, 0, 0);
-				margin: 0px auto;
+				margin: 0 auto;
 				overflow: hidden;
 			}
 			
 			li {
 				position: relative;
 				bottom: 12px;
-				left: -8px;
+				left: 0;
 				list-style-type: none;
-			}
+				
 		</style>
 	</head>
 	<body>
 		<ul id="slideshow">
 			<li><img src="ressources/images/lol_panels/riot _games.png" alt="riot_games"></li>
-			<li><img src="ressources/images/lol_panels/tournois_legend.png" alt="tournois_legend"></li>
 			<li><img src="ressources/images/lol_panels/current_patch.png" alt="current_patch"></li>
 		</ul>
 	</body>

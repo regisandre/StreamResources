@@ -25,7 +25,7 @@ Contrôles:
 	---------------------
 	Caméra dirigée: A
 	Sélectionner joueurs bleus: 1->5
-	Sélecttionner joueurs rouges: Q->F
+	Sélectionner joueurs rouges: Q->F
 	Centrer caméra sur champion: Space
 
 	Contrôle du temps:
