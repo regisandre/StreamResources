@@ -6,9 +6,10 @@ Font: Shentox-SemiBold
 
 Taille de l'interface:
 ----------------------
-Échelle de l'ATH: 86
+Échelle de l'ATH: 100
 Échelle de la fenêtre de disussion: 0
-Échelle de la minicarte: 100
+Échelle de la minicarte: 39
+Échelle de l
 
 Contrôles:
 ----------
