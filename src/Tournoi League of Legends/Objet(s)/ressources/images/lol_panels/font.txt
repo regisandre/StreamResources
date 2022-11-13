@@ -1,2 +1,7 @@
 name: Shentox SemiBold
 color: #A79D68
+
+prefered size of images :
+max height : 80
+max width : 256
+prefered width : 192
