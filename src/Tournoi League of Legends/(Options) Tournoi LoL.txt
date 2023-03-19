@@ -9,29 +9,28 @@ Taille de l'interface:
 Échelle de l'ATH: 100
 Échelle de la fenêtre de disussion: 0
 Échelle de la minicarte: 39
-Échelle de l
 
 Contrôles:
 ----------
 	Interface:
 	----------
-	Brouillard de guerre ON/OFF: T
 	ATH Spectateur ON/OFF: Y
-	Afficher scores/objets: U
-	Afficher/Masquer l'interface de combat: I
-	Afficher les scores: O
-	Afficher/masquer l'ATH: P
+	Switch objets/golds: X
+	Afficher/Masquer les scores: O
+	Afficher/Masquer l'interface de combat : Q
+	Afficher/masquer l'ATH: H
+	Brouillard de guerre ON/OFF: F
 
 	Contrôle de la caméra
 	---------------------
-	Caméra dirigée: A
+	Caméra dirigée: D
 	Sélectionner joueurs bleus: 1->5
-	Sélectionner joueurs rouges: Q->F
+	Sélectionner joueurs rouges: A->T
 	Centrer caméra sur champion: Space
 
 	Contrôle du temps:
 	------------------
-	Play/pause: M
+	Play/pause: P
 
 	Autres:
 	-------
