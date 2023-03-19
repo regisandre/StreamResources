@@ -4,18 +4,20 @@
 		<script type="text/javascript" src="ressources/js/jquery.js"></script>
 		<script type="text/javascript" src="ressources/js/jquery.innerfade.js"></script>
 		<script type="text/javascript">
-			function autoupdate() {
+			const timer = new URL(window.location.toLocaleString()).searchParams.get("timer") || 30000;
+
+			function autoUpdate() {
 				$('#slideshow').innerfade({
 					timeout: 1000,
 					speed: 1000,
-					timeout: 5000, // 60000
+					timeout: timer,
 					type: 'sequence',
 					containerheight: '118px'
 				});
-			}
+			};
 
 			$(function(){
-				autoupdate();
+				autoUpdate();
 			});
 		</script>
 		<style>
@@ -27,20 +29,22 @@
 				overflow: hidden;
 			}
 			
-			li {
+			#slideshow li {
 				position: relative;
 				bottom: 12px;
 				left: 0;
 				list-style-type: none;
-				
+			}
 		</style>
 	</head>
 	<body>
 		<ul id="slideshow">
-			<li><img src="ressources/images/lol_panels/riot _games.png" alt="riot games logo"></li>
-			<li><img src="ressources/images/lol_panels/current_patch.png" alt="current patch version"></li>
-			<li><img src="ressources/images/lol_panels/odoo.png" alt="odoo"></li>
-			<li><img src="ressources/images/lol_panels/league_of_legends.png" alt="league of legends"></li>
+			<li><img src="ressources/images/lol_panels/match_vs.png"></li>
+			<li><img src="ressources/images/lol_panels/odoo.png"></li>
+			<li><img src="ressources/images/lol_panels/red_live.png"></li>
+			<li><img src="ressources/images/lol_panels/riot _games.png"></li>
+			<li><img src="ressources/images/lol_panels/current_patch.png"></li>
+			<li><img src="ressources/images/lol_panels/league_of_legends.png"></li>
 		</ul>
 	</body>
 </html>
